@@ -1,14 +1,14 @@
 const form = document.getElementById("contactForm")//contactFormを操作する//
 
-form.addEventListener("submit",function(e){
+form.addEventListener("submit",function(e){ 
     e.preventDefault();
 
-    const name= document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+    const name= document.getElementById("name").value; //formLesson.htmlからname idのinputに入力さえた内容を取得する。//
+    const email = document.getElementById("email").value; //formLesson.htmlから　email idのinputに入力された内容を取得する。//
+    const message = document.getElementById("message").value;//formLesson.htmlから message idのinputに入力された内容を取得する。//
 
-    if(name === ""|| email === "" ||message === ""){
-        alert("すべて入力してください");
+    if(name === ""|| email === "" ||message === ""){ 
+        alert("すべて入力してください");  
         return;
     }
 
@@ -20,6 +20,4 @@ form.addEventListener("submit",function(e){
 
 
 })
-
-
 
